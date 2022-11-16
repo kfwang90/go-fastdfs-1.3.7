@@ -90,8 +90,8 @@ http://yourserver ip:8080 注意：不要使用127.0.0.1上传
 
 
 #### 编译方法 
-## 依赖go1.9.2.linux-amd64.tar.gz或go1.9.2.linux-arm64.tar.gz，根据平台自行下载，执行命令：
-cd go-fastdfs
-mv vendor src
-pwd=`pwd`
-GOPATH=$pwd GO111MODULE=off go build -o fileserver fileserver.go
+# 依赖go1.9.2.linux-amd64.tar.gz或go1.9.2.linux-arm64.tar.gz，根据平台自行下载，执行命令：
+cd go-fastdfs  
+mv vendor src  
+pwd=`pwd`  
+GOPATH=$pwd GO111MODULE=off go build -o fileserver fileserver.go  
