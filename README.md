@@ -89,8 +89,8 @@ http://yourserver ip:8080 注意：不要使用127.0.0.1上传
 ### [视频教程](https://www.bilibili.com/video/av92526484)
 
 
-#### 编译方法 
-# 依赖go1.9.2.linux-amd64.tar.gz或go1.9.2.linux-arm64.tar.gz，根据平台自行下载，执行命令：
+### 编译方法 
+#### 依赖go1.9.2.linux-amd64.tar.gz或go1.9.2.linux-arm64.tar.gz，根据平台自行下载，执行命令：
 cd go-fastdfs  
 mv vendor src  
 pwd=`pwd`  
