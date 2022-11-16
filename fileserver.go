@@ -1209,6 +1209,17 @@ func (this *Server) DownloadNormalFileByURI(w http.ResponseWriter, r *http.Reque
 		this.ResizeImage(w, fullpath, uint(imgWidth), uint(imgHeight))
 		return true, nil
 	}
+	//add by youbank 20221112 start. support index.html
+	if find := strings.Contains(fullpath, "index.html"); find {
+	   f, err := os.Open(fullpath)
+	   if err != nil {
+		  log.Error(err)
+		  return false, nil
+	   }
+	   http.ServeContent(w, r, "index.html", time.Now(), f) 
+	   return true, nil
+	}
+	//add by youbank 20221112 end.
 	staticHandler.ServeHTTP(w, r)
 	return true, nil
 }
