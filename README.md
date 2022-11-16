@@ -89,8 +89,9 @@ http://yourserver ip:8080 注意：不要使用127.0.0.1上传
 ### [视频教程](https://www.bilibili.com/video/av92526484)
 
 
-#### 如果你觉得本项目不错，请点击项目顶部的 `star` 按钮关注本项目
-
-> QQ交流群：964274270(go-fastdfs技术交流群)
-
-同时要说明的是，该群是一个学习交流群，如果是程序相关问题，请直接提交issues，不接受邮件求助、微信求助和QQ私信求助
+#### 编译方法 
+## 依赖go1.9.2.linux-amd64.tar.gz或go1.9.2.linux-arm64.tar.gz，根据平台自行下载，执行命令：
+cd go-fastdfs
+mv vendor src
+pwd=`pwd`
+GOPATH=$pwd GO111MODULE=off go build -o fileserver fileserver.go
